@@ -1,0 +1,28 @@
+local plr = game.Players.LocalPlayer.Character
+    plr:WaitForChild("Head")
+    plr:WaitForChild("RightLowerLeg")
+    plr:WaitForChild("RightUpperLeg")
+    plr:WaitForChild("RightFoot")
+    plr.Head.MeshId = 0
+    plr.Head.face:Destroy()
+    plr.RightLowerLeg.MeshId = "902942093"
+    plr.RightLowerLeg.Transparency = "1"
+    plr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+    plr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    plr.RightFoot.MeshId = "902942089"
+    plr.RightFoot.Transparency = "1"
+    
+game.Players.LocalPlayer.CharacterAdded:Connect(function(plr)
+    plr:WaitForChild("Head")
+    plr:WaitForChild("RightLowerLeg")
+    plr:WaitForChild("RightUpperLeg")
+    plr:WaitForChild("RightFoot")
+    plr.Head.MeshId = 0
+    plr.Head.face:Destroy()
+    plr.RightLowerLeg.MeshId = "902942093"
+    plr.RightLowerLeg.Transparency = "1"
+    plr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+    plr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+    plr.RightFoot.MeshId = "902942089"
+    plr.RightFoot.Transparency = "1"
+end)
